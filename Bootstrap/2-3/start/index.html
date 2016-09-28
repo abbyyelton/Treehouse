@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ribbit - A Treehouse Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <link href="css/my-styles.css" rel="stylesheet" media="screen">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand text-mute" href="#">Ribbit</a>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About Ribbit</a></li>
+            <li class="dropdown">
+              <a data-toggle="dropdown" data-target="">Treehouse<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">About Treehouse</a></li>
+                <li><a href="#">Video Library</a></li>
+                <li><a href="#">Learning Adventures</a></li>
+                <li class="divider"></a>
+                <li><a href="#">Plans and Pricing</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="myCarousel" class="carousel slide jumbotron">
+      <div class="container">
+        <ol class="carousel-indicators">
+          <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <h1>Self-destructing message app</h1>
+            <p class="lead">Learn how to build this fun little app by signing up for a Treehouse account today! We'll teach you how to build both apps from scratch!</p>
+            <p class="btn-group">
+              <a class="btn btn-success btn-lg" href="#">Download the app</a>
+              <a class="btn btn-default btn-lg hidden-xs" data-toggle="modal" href="#textModal" >Text me the link</a>
+            </p>
+          </div>
+          <div class="item">
+            <h1>Excellent New Message</h1>
+            <p class="lead">Learn how to build this fun little app by signing up for a Treehouse account today! We'll teach you how to build both apps from scratch!</p>
+            <p class="btn-group">
+              <a class="btn btn-success btn-lg" href="#">Download the app</a>
+            </p>
+          </div>
+          <div class="item">
+            <h1>One More</h1>
+            <p class="lead">Learn how to build this fun little app by signing up for a Treehouse account today! We'll teach you how to build both apps from scratch!</p>
+            <p class="btn-group">
+              <a class="btn btn-success btn-lg" href="#">Download the app</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="icon-prev"></span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="icon-next"></span>
+      </a>
+    </div>
+<!-- Modal -->
+    <div class="modal fade" id="textModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">We'll Text You the Link!</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-inline">
+              <div class="form-group">
+                <label class="sr-only" for="mobilePhone">Mobile Phone</label>
+                <input type="tel" class="form-control" id="mobilePhone" placeholder="MobilePhone">
+              </div>
+              <div class="form-group">
+                <select class="form-control">
+                  <option>iOS</option>
+                  <option>Android</option>
+                </select>
+              </div>
+                <button type="submit" class="btn btn-primary" data-dismiss="modal">Send me link</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <b class="glyphicon glyphicon-camera"></b>
+          <h2>Some Title</h1>
+          <p>A bunch of text about some stuff. I should use Latin, like they do on google templates. Oh, this is a lot of text but it needs to look like a paragraph!!</p>
+        </div>
+        <div class="col-sm-4">
+          <b class="glyphicon glyphicon-user"></b>
+          <h2>Another Title</h1>
+            <p>A bunch of text about some stuff. I should use Latin, like they do on google templates. Oh, this is a lot of text but it needs to look like a paragraph!!</p>
+        </div>
+        <div class="col-sm-4">
+          <b class="glyphicon glyphicon-cloud"></b>
+          <h2>One More Title</h1>
+            <p>A bunch of text about some stuff. I should use Latin, like they do on google templates. Oh, this is a lot of text but it needs to look like a paragraph!!</p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-sm-6 hidden-xs">
+          <h3>More Stuff</h1>
+          <p>A bunch of text about some stuff. I should use Latin, like they do on google templates. Oh, this is a lot of text but it needs to look like a paragraph!!</p>
+          <div class="row" >
+            <div class="col-sm-6">
+              <img class="img-responsive" src="img/pikachu.png">
+            </div>
+            <div class="col-sm-6">
+              <p>Get access to these courses for only $24 per month!</p>
+              <a href="#">Visit Treehouse now!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <h3>Even More Stuff</h1>
+            <p>A bunch of text about some stuff. I should use Latin, like they do on google templates. Oh, this is a lot of text but it needs to look like a paragraph!!</p>
+        </div>
+      </div>
+
+      <div>
+        <p>&copy; 2013 Ribbit - By Treehouse Island, Inc.</p>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
